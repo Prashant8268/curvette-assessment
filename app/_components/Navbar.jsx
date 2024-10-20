@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import Image from "next/image";
+import pro from './image.png';
 export default function Navbar() {
   const [showBorder, setShowBorder] = useState(true);
   return (
@@ -9,10 +10,11 @@ export default function Navbar() {
       }`}
       style={{ height: "10%" }}
     >
-      <img
-        src=".././images/image.png"
-        alt="Logo"
-        className="h-10 w-auto mb-2 sm:mb-0"
+      <Image
+        src={pro}
+        width={100}
+        height={300}
+        alt="Picture of the author"
       />
       <span
         className="text-[#576474] font-[500] text-[28px] leading-[36.46px] text-left"

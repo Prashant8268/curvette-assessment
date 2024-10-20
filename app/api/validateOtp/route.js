@@ -1,4 +1,4 @@
-import { log } from "console";
+
 import dbConnect from "../../../lib/mongo";
 import Company from "../../../Models/Company";
 import { NextResponse } from "next/server";
@@ -19,7 +19,6 @@ export async function POST(req) {
 
     const currentTime = new Date();
     let isValid = false;
-    console.log(type,'type')
 
     if (type == "Email") {
       isValid =

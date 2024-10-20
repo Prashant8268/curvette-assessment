@@ -19,7 +19,6 @@ export default function SignupForm() {
     password: "",
   });
   const router = useRouter();
-  const [errors, setErrors] = useState({});
   const [alertMessage, setAlertMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -48,7 +47,7 @@ export default function SignupForm() {
 
     // Validate only the changed field
     const error = validateField(name, value);
-    setErrors((prevErrors) => ({ ...prevErrors, [name]: error }));
+    ((prevErrors) => ({ ...prevErrors, [name]: error }));
     if (error) {
       setAlertMessage(error); // Set the alert message
       setTimeout(() => setAlertMessage(""), 3000); // Clear after 3 seconds
@@ -81,7 +80,7 @@ export default function SignupForm() {
         router.push('/verify');
       }
     } else {
-      setErrors(validationErrors);
+      (validationErrors);
     }
   };
 

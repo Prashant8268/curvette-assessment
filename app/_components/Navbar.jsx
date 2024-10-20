@@ -2,11 +2,10 @@ import { useState } from "react";
 import Image from "next/image";
 import pro from './image.png';
 export default function Navbar() {
-  const [showBorder, setShowBorder] = useState(true);
   return (
     <div
       className={`w-full p-3 pb-0 flex flex-col sm:flex-row justify-between items-center ${
-        showBorder ? "border-b border-gray-300" : ""
+        true ? "border-b border-gray-300" : ""
       }`}
       style={{ height: "10%" }}
     >

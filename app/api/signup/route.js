@@ -4,7 +4,7 @@ import Company from "../../../Models/Company";
 import { NextResponse } from "next/server";
 import jwt from 'jsonwebtoken';
 
-export async function POST(req, res) {
+export async function POST(req) {
   if (req.method === "POST") {
     await dbConnect();
 

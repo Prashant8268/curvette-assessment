@@ -1,9 +1,7 @@
 'use client';
-import Navbar from "./_components/NavBar";
+import Navbar from "./_components/Navbar";
 import Signup from "./_components/Signup";
-import { Sign } from "crypto";
 import SignupForm from "./_components/SignupForm";
-import OtpVerification from './_components/Verify'
 export default function Home() {
   return (
     <div className="h-screen">

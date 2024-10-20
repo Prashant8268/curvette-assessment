@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Navbar from "../_components/NavBar";
+import Navbar from "../_components/Navbar";
 import Sidebar from "../_components/Sidebar";
 import JobForm from "../_components/CreateInterview";
 
